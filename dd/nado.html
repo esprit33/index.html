@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="urf-8">
+<title>랜덤 나도 사진</title>
+<script language = "javascript">
+	var imgArray = new Array();
+	imgArray[0] = "img/nado1.jpg"
+	imgArray[1] = "img/nado2.jpg"
+	imgArray[2] = "img/nado3.jpg"
+	imgArray[3] = "img/nado4.jpg"
+    imgArray[4] = "img/nado5.jpg"
+    imgArray[5] = "img/nado6.jpg"
+    imgArray[6] = "img/nado7.jpg"
+    imgArray[7] = "img/nado8.jpg";
+
+	
+	function showImage(){
+		var imgNum = Math.round(Math.random()*7);
+		var objImg = document.getElementById("introImg");
+		objImg.src = imgArray[imgNum];
+	}
+var nadoA;
+
+
+</script>
+
+</head>
+<body onload = "showImage()">
+	<img id = "introImg" border="0" width="700" height="500">
+    <br>
+
+    <button type="button" onclick="alert(nadoA)">오나가 왼쪽</button>
+    <button type="button" onclick="alert(nadoB)">애나가 왼쪽</button>
+
+<script>
+if (introimg="img/nado1.jpg"){nadoA = "나도가 좋아함"}
+if (introimg="img/nado2.jpg"){nadoA = "나도가 좋아함"}
+if (introimg="img/nado3.jpg"){nadoA = "나도가 좋아함"}
+if (introimg="img/nado4.jpg"){nadoA = "나도가 좋아함"}
+if (introimg="img/nado5.jpg"){nadoA = "나도가 화남"}
+if (introimg="img/nado6.jpg"){nadoA = "나도가 화남"}
+if (introimg="img/nado7.jpg"){nadoA = "나도가 화남"}
+if (introimg="img/nado8.jpg"){nadoA = "나도가 화남"}
+
+if (introimg="img/nado1.jpg"){nadoB = "나도가 화남"}
+if (introimg="img/nado2.jpg"){nadoB = "나도가 화남"}
+if (introimg="img/nado3.jpg"){nadoB = "나도가 화남"}
+if (introimg="img/nado4.jpg"){nadoB = "나도가 화남"}
+if (introimg="img/nado5.jpg"){nadoB = "나도가 좋아함"}
+if (introimg="img/nado6.jpg"){nadoB = "나도가 좋아함"}
+if (introimg="img/nado7.jpg"){nadoB = "나도가 좋아함"}
+if (introimg="img/nado8.jpg"){nadoB = "나도가 좋아함"}
+
+
+
+</script>
+
+</body>
+</html>
